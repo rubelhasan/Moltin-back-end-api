@@ -1,23 +1,20 @@
 const Helper = require('../helper/helper').Helper
-const moltin = require('@moltin/sdk')
-const Moltin = moltin.gateway({
-  client_id: process.env.MOLTIN_CLIENT_ID,
-  client_secret: process.env.MOLTIN_CLIENT_SECRET
-})
+const Moltin = require('../moltin').Moltin
+
 class product {
   constructor (route) {
     this.router = route
     this._helper = new Helper('/product')
   }
   _makeUrl (name) {
-    return this._helper.makeUrl(name)
+    return this._helper.url.makeUrl(name)
   }
   getProductList (req, res) {
     let url = this._makeUrl('list')
     return this.router.get(url, (req, res) => {
       const products = Moltin.Products.All()
       products.then((product) => {
-        this._helper.render(product, res)
+        this._helper.response.render(product, res)
       })
     })
   }

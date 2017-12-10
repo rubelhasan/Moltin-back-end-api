@@ -1,4 +1,4 @@
-class response {
+class Response {
   _makeJson (content) {
     const response = {
       statusCode: 200,
@@ -12,19 +12,20 @@ class response {
     res.end(bodyContent)
   }
 }
-class url extends response {
-  constructor () {
-    super()
+class Url {
+  constructor (name) {
+    this.moduleName = name
   }
   makeUrl (name) {
     return `${this.moduleName}/${name}`
   }
 }
 
-class Helper extends url {
+class Helper {
   constructor (name) {
-    super()
     this.moduleName = name
+    this.url = new Url(name)
+    this.response = new Response()
   }
 }
 
