@@ -1,12 +1,33 @@
-class urlHelper{
-	constructor(name){
-		this.moduleName=name;
-	}
-	makeUrl(name){
-		return `${this.moduleName}/${name}`;
-	}
+class response {
+  _makeJson (content) {
+    const response = {
+      statusCode: 200,
+      body: content
+    }
+    return response
+  }
+  render (content, res) {
+    const bodyContent = this._makeJson(content)
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8')
+    res.end(JSON.stringify(bodyContent))
+  }
+}
+class url extends response {
+  constructor () {
+    super()
+  }
+  makeUrl (name) {
+    return `${this.moduleName}/${name}`
+  }
 }
 
-module.exports={
-	urlHelper:urlHelper
+class Helper extends url {
+  constructor (name) {
+    super()
+    this.moduleName = name
+  }
+}
+
+module.exports = {
+  Helper: Helper
 }

@@ -1,4 +1,5 @@
 export API_ENDPOINT=3000
 export DB=8081
-
-node app.js
+export MOLTIN_CLIENT_ID=DLfrpduDVrSj2cX1cv267nDqB1WDuaUWEzlZQ5INbX
+export MOLTIN_CLIENT_SECRET=tIHDMP0YfJ0Ibyq0gejQ9yzCc7k871YtMks300yZ4p
+nodemon app.js
