@@ -1,13 +1,24 @@
-
+const helper=require('../helper/helper').urlHelper;
 class product{
 	constructor(route){
 		this.router=route;
-		this.name
+		this.urlHelper=new helper('/product');
+	}
+	_makeUrl(name){
+		return this.urlHelper.makeUrl(name);
 	}
 	getProductList(req,res){
-		return	this.router.get('/', (req,res)=> {
+		let url=this._makeUrl('list');
+		return	this.router.get(url, (req,res)=> {
 			res.setHeader('Content-Type', 'text/plain; charset=utf-8')
-			res.end('Hello World!')
+			res.end('product List')
+		})
+	}
+	getProduct(req,res){
+		let url=this._makeUrl('view');
+		return	this.router.get(url, (req,res)=> {
+			res.setHeader('Content-Type', 'text/plain; charset=utf-8')
+			res.end('Product View');
 		})
 	}
 }

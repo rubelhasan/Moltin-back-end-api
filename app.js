@@ -5,11 +5,11 @@ const server=require('./server').server;
 const Route=require('router');
 const router=Route();
 
-const product=require('./product').product;
+const product=require('./api/product').product;
 const item=new product(router);
 const project=new server(router);
 item.getProductList();
-
+item.getProduct();
 project.run().listen(api_endpoint);
 
 
