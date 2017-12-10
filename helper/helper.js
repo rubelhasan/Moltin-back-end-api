@@ -4,12 +4,12 @@ class response {
       statusCode: 200,
       body: content
     }
-    return response
+    return JSON.stringify(response)
   }
   render (content, res) {
     const bodyContent = this._makeJson(content)
     res.setHeader('Content-Type', 'text/plain; charset=utf-8')
-    res.end(JSON.stringify(bodyContent))
+    res.end(bodyContent)
   }
 }
 class url extends response {
