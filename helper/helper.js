@@ -8,6 +8,7 @@ class Response {
   }
   render (content, res) {
     const bodyContent = this._makeJson(content)
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader('Content-Type', 'text/plain; charset=utf-8')
     res.end(bodyContent)
   }
@@ -17,7 +18,7 @@ class Url {
     this.moduleName = name
   }
   makeUrl (name) {
-    return `${this.moduleName}/${name}`
+      return `${this.moduleName}/${name}`
   }
 }
 

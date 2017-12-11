@@ -12,7 +12,7 @@ class product {
   getProductList (req, res) {
     let url = this._makeUrl('list')
     return this.router.get(url, (req, res) => {
-      const products = Moltin.Products.All()
+      const products = Moltin.Products.With('files, main_images, collections').All()
       products.then((product) => {
         this._helper.response.render(product, res)
       })
