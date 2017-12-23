@@ -5,6 +5,7 @@ class product {
   constructor (route) {
     this.router = route
     this._helper = new Helper('/product')
+    this._route()
   }
   _makeUrl (name) {
     return this._helper.url.makeUrl(name)
@@ -21,9 +22,12 @@ class product {
   getProduct (req, res) {
     let url = this._makeUrl('view')
     return this.router.get(url, (req, res) => {
-      res.setHeader('Content-Type', 'text/plain; charset=utf-8')
-      res.end('Product View')
+      this._helper.response.render('Product view', res);
     })
+  }
+  _route () {
+    this.getProduct()
+    this.getProductList()
   }
 }
 
