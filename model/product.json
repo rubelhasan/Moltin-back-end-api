@@ -1,0 +1,273 @@
+{
+  "content": {
+    "data": [
+      {
+        "type": "product",
+        "id": "aa6f8a8d-ce60-45a8-9010-0931d59be4b9",
+        "name": "Destiny",
+        "slug": "destiny",
+        "sku": "new test",
+        "manage_stock": true,
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n",
+        "price": [
+          {
+            "amount": 9000,
+            "currency": "USD",
+            "includes_tax": true
+          }
+        ],
+        "status": "live",
+        "commodity_type": "physical",
+        "meta": {
+          "timestamps": {
+            "created_at": "2017-12-10T09:43:24+00:00",
+            "updated_at": "2017-12-10T09:43:46+00:00"
+          },
+          "display_price": {
+            "with_tax": {
+              "amount": 9000,
+              "currency": "USD",
+              "formatted": "$90.00"
+            },
+            "without_tax": {
+              "amount": 9000,
+              "currency": "USD",
+              "formatted": "$90.00"
+            }
+          },
+          "stock": {
+            "level": 5,
+            "availability": "in-stock"
+          }
+        },
+        "relationships": {
+          "main_image": {
+            "data": {
+              "type": "main_image",
+              "id": "3354ea48-5b23-49b4-9035-4f56aac5e9a2"
+            }
+          }
+        }
+      },
+      {
+        "type": "product",
+        "id": "a9580c70-dad8-4988-9f06-e45e0a5304cb",
+        "name": "Liberty",
+        "slug": "liberty",
+        "sku": "test",
+        "manage_stock": true,
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n",
+        "price": [
+          {
+            "amount": 8000,
+            "currency": "USD",
+            "includes_tax": true
+          }
+        ],
+        "status": "live",
+        "commodity_type": "physical",
+        "meta": {
+          "timestamps": {
+            "created_at": "2017-12-10T09:37:59+00:00",
+            "updated_at": "2017-12-10T09:41:30+00:00"
+          },
+          "display_price": {
+            "with_tax": {
+              "amount": 8000,
+              "currency": "USD",
+              "formatted": "$80.00"
+            },
+            "without_tax": {
+              "amount": 8000,
+              "currency": "USD",
+              "formatted": "$80.00"
+            }
+          },
+          "stock": {
+            "level": 50,
+            "availability": "in-stock"
+          }
+        },
+        "relationships": {
+          "main_image": {
+            "data": {
+              "type": "main_image",
+              "id": "a899d3eb-b50c-49fa-9895-89a57aede7cd"
+            }
+          }
+        }
+      },
+      {
+        "type": "product",
+        "id": "0520df0a-8e69-4600-b99d-7e971f5343dc",
+        "name": "Spirit",
+        "slug": "spirit",
+        "sku": "1000",
+        "manage_stock": true,
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n",
+        "price": [
+          {
+            "amount": 60000,
+            "currency": "USD",
+            "includes_tax": true
+          }
+        ],
+        "status": "live",
+        "commodity_type": "digital",
+        "meta": {
+          "timestamps": {
+            "created_at": "2017-12-10T09:31:36+00:00",
+            "updated_at": "2017-12-10T09:34:15+00:00"
+          },
+          "display_price": {
+            "with_tax": {
+              "amount": 60000,
+              "currency": "USD",
+              "formatted": "$600.00"
+            },
+            "without_tax": {
+              "amount": 60000,
+              "currency": "USD",
+              "formatted": "$600.00"
+            }
+          },
+          "stock": {
+            "level": 10,
+            "availability": "in-stock"
+          }
+        },
+        "relationships": {
+          "files": {
+            "data": [
+              {
+                "type": "file",
+                "id": "f21349a3-bae7-4231-a509-320752e6c7bf"
+              }
+            ]
+          },
+          "main_image": {
+            "data": {
+              "type": "main_image",
+              "id": "97b10c87-8f9a-42bf-9acc-f908d83695a1"
+            }
+          }
+        }
+      }
+    ],
+    "links": {
+      "current": "https://api.moltin.com/v2/products?page[limit]=100&page[offset]=0&include=files, main_images, collections",
+      "first": "https://api.moltin.com/v2/products?page[limit]=100&page[offset]=0&include=files, main_images, collections",
+      "last": null
+    },
+    "meta": {
+      "results": {
+        "total": 3,
+        "all": 3
+      },
+      "page": {
+        "limit": 100,
+        "offset": 0,
+        "current": 1,
+        "total": 1
+      }
+    },
+    "included": {
+      "main_images": [
+        {
+          "type": "file",
+          "id": "3354ea48-5b23-49b4-9035-4f56aac5e9a2",
+          "link": {
+            "href": "https://s3-eu-west-1.amazonaws.com/bkt-svc-files-cmty-api-moltin-com/3d982388-a4a0-4cb1-8e37-04d959d9cf5f/3354ea48-5b23-49b4-9035-4f56aac5e9a2.jpg"
+          },
+          "file_name": "deq2zRTZShmWZYBH87AG_Heesen super yacht Destiny ex-Ilona-1920x1080.jpg",
+          "mime_type": "image/jpeg",
+          "file_size": 338058,
+          "public": true,
+          "meta": {
+            "dimensions": {
+              "width": 1920,
+              "height": 1080
+            },
+            "timestamps": {
+              "created_at": "2017-12-10T09:43:46.212Z"
+            }
+          },
+          "links": {
+            "current": "https://api.moltin.com/v2/files/3354ea48-5b23-49b4-9035-4f56aac5e9a2"
+          }
+        },
+        {
+          "type": "file",
+          "id": "a899d3eb-b50c-49fa-9895-89a57aede7cd",
+          "link": {
+            "href": "https://s3-eu-west-1.amazonaws.com/bkt-svc-files-cmty-api-moltin-com/3d982388-a4a0-4cb1-8e37-04d959d9cf5f/a899d3eb-b50c-49fa-9895-89a57aede7cd.jpg"
+          },
+          "file_name": "CdChHsXVRku1Y1ysWHrz_Sunseeker-motor-yacht-My-Way-1920x1080.jpg",
+          "mime_type": "image/jpeg",
+          "file_size": 132894,
+          "public": true,
+          "meta": {
+            "dimensions": {
+              "width": 1600,
+              "height": 900
+            },
+            "timestamps": {
+              "created_at": "2017-12-10T09:41:29.269Z"
+            }
+          },
+          "links": {
+            "current": "https://api.moltin.com/v2/files/a899d3eb-b50c-49fa-9895-89a57aede7cd"
+          }
+        },
+        {
+          "type": "file",
+          "id": "97b10c87-8f9a-42bf-9acc-f908d83695a1",
+          "link": {
+            "href": "https://s3-eu-west-1.amazonaws.com/bkt-svc-files-cmty-api-moltin-com/3d982388-a4a0-4cb1-8e37-04d959d9cf5f/97b10c87-8f9a-42bf-9acc-f908d83695a1.jpg"
+          },
+          "file_name": "jZA3MK9nSFWauK7AVrkc_New-Zealand-catamaran-superyacht-spirit-1920x1080.jpg",
+          "mime_type": "image/jpeg",
+          "file_size": 191941,
+          "public": true,
+          "meta": {
+            "dimensions": {
+              "width": 1600,
+              "height": 900
+            },
+            "timestamps": {
+              "created_at": "2017-12-10T09:33:43.922Z"
+            }
+          },
+          "links": {
+            "current": "https://api.moltin.com/v2/files/97b10c87-8f9a-42bf-9acc-f908d83695a1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "type": "file",
+          "id": "f21349a3-bae7-4231-a509-320752e6c7bf",
+          "link": {
+            "href": "https://s3-eu-west-1.amazonaws.com/bkt-svc-files-cmty-api-moltin-com/3d982388-a4a0-4cb1-8e37-04d959d9cf5f/f21349a3-bae7-4231-a509-320752e6c7bf.jpg"
+          },
+          "file_name": "jZA3MK9nSFWauK7AVrkc_New-Zealand-catamaran-superyacht-spirit-1920x1080.jpg",
+          "mime_type": "image/jpeg",
+          "file_size": 191941,
+          "public": true,
+          "meta": {
+            "dimensions": {
+              "width": 1600,
+              "height": 900
+            },
+            "timestamps": {
+              "created_at": "2017-12-10T09:33:23.616Z"
+            }
+          },
+          "links": {
+            "current": "https://api.moltin.com/v2/files/f21349a3-bae7-4231-a509-320752e6c7bf"
+          }
+        }
+      ]
+    }
+  }
+}
